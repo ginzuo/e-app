@@ -5,12 +5,14 @@ export default defineNuxtConfig({
   imports: { dirs: ['./stores', './composables/*/*.{ts,js}'] },
   devtools: { enabled: true },
   modules: [
-      '@nuxtjs/tailwindcss',
-      'shadcn-nuxt',
-      '@nuxt/eslint',
-      '@nuxtjs/apollo',
-      '@pinia/nuxt',
-      'pinia-plugin-persistedstate/nuxt',
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    '@nuxt/eslint',
+    '@nuxtjs/apollo',
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
+    "@nuxt/image",
+    '@nuxt/icon',
   ],
   shadcn: {
     prefix: '',
@@ -19,7 +21,7 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: 'https://spacex-production.up.railway.app'
+        httpEndpoint: 'https://api.escuelajs.co/graphql'
       }
     },
   },
