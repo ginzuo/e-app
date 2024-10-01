@@ -3,7 +3,7 @@
         <DrawerTrigger>
             <Icon name="solar:cart-bold" class="text-emerald-900 size-10" />
         </DrawerTrigger>
-        <DrawerContent class="h-[450px] bg-emerald-50 rounded-t-xl">
+        <DrawerContent class="h-[450px] bg-emerald-50 rounded-t">
             <DrawerHeader>
                 <DrawerTitle>
                     <span class="text-emerald-950 text-2xl font-bold flex items-left -mt-6">Cart</span>
@@ -19,7 +19,6 @@
 <script setup lang="ts">
 import {
     Drawer,
-    DrawerClose,
     DrawerContent,
     DrawerFooter,
     DrawerHeader,

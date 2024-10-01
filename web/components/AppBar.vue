@@ -5,7 +5,9 @@
             <NuxtLink to="/">
                 <Icon name="fluent:home-12-filled" class="text-emerald-900 size-10" />
             </NuxtLink>
-            <Icon name="iconamoon:profile-fill" class="text-emerald-900 size-10" />
+            <NuxtLink to="/login">
+                <Icon name="iconamoon:profile-fill" class="text-emerald-900 size-10" />
+            </NuxtLink>
         </div>
     </div>
 </template>
