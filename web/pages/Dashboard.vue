@@ -1,11 +1,17 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
+    <div>
+        <Head>
+            <Title>Dashboard</Title>
+        </Head>
 
+        <main class="max-w-screen-lg mx-auto">
+            Dashboard
+        </main>
+    </div>
 </template>
 
-<style scoped>
-
-</style>
+<script setup lang="ts">
+definePageMeta({
+    layout: 'app-layout',
+});
+</script>
