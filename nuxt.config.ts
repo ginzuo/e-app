@@ -4,7 +4,14 @@ export default defineNuxtConfig({
   srcDir: 'web/',
   imports: { dirs: ['./stores', './composables/*/*.{ts,js}'] },
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxt/eslint', '@nuxtjs/apollo'],
+  modules: [
+      '@nuxtjs/tailwindcss',
+      'shadcn-nuxt',
+      '@nuxt/eslint',
+      '@nuxtjs/apollo',
+      '@pinia/nuxt',
+      'pinia-plugin-persistedstate/nuxt',
+  ],
   shadcn: {
     prefix: '',
     componentDir: './components/ui'
