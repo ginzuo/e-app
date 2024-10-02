@@ -1,75 +1,37 @@
-# Nuxt 3 Minimal Starter
+# Nuxt.js GraphQL Application
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is a Nuxt.js application that interacts with a GraphQL API.
 
-## Setup
+## Table of Contents
 
-Make sure to install the dependencies:
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
 
-```bash
-# npm
-npm install
+## Requirements
 
-# pnpm
-pnpm install
+Before you begin, ensure you have met the following requirements:
+- **Node.js**: Version 14 or higher
+- **npm** or **Yarn**: Package managers for managing dependencies
+- **GraphQL API**: A running GraphQL API that the application will connect to
 
-# yarn
-yarn install
+## Installation
 
-# bun
-bun install
-```
+Follow these steps to install the application:
 
-## Development Server
+1. **Clone the repository:**
+   git clone https://github.com/ginzuo/e-app.git
+   cd e-app
 
-Start the development server on `http://localhost:3000`:
+2. **Install dependencies:**
+   npm install
+   
+3. **Run the Development Server**
+   npm dev
 
-```bash
-# npm
-npm run dev
+## Usage
+This Nuxt.js application is designed to fetch and manage data from a GraphQL API. Here are some key features:
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Dynamic data fetching using Apollo Client.
+Shadcn UI components built with Vue.js.
+User-friendly interface for interacting with the API.
