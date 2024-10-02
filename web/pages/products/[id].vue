@@ -6,20 +6,17 @@
                     <DrawerTitle>
                         <div class="flex items-center justify-between">
                             <span class="text-emerald-950 text-2xl font-bold flex items-left">Product Details</span>
-                            <Icon name="mdi:close" class="text-red-600 ml-4 h-6 w-6 cursor-pointer text-emerald-950" @click.prevent="router.push('/dashboard')" />
+                            <Icon name="mdi:close" class="text-red-600 ml-4 h-6 w-6 cursor-pointer" @click.prevent="router.push('/dashboard')" />
                         </div>
                     </DrawerTitle>
                 </DrawerHeader>
                 <div class="p-4">
                     <p><strong>Title:</strong> {{ data.product.title }}</p>
-                    <p><strong>Price:</strong> {{ data.product.price }}</p>
-                    <p><strong>Description:</strong> {{ data.product.description }}</p>
+                    <p class="text-xl"><strong>Price:</strong> ${{ data.product.price }}</p>
                     <p><strong>Category:</strong> {{ data.product.category.name }}</p>
-                    <img :src="data.product.images[0]" alt="Product Image" class="mt-4 w-full h-auto">
+                    <img :src="data.product.images[0]" alt="Product Image" class="my-2 rounded-xl w-full h-auto">
+                    <p><strong>Description:</strong> {{ data.product.description }}</p>
                 </div>
-                <DrawerFooter>
-                    <Button class="py-6 text-xl" @click.prevent="handleAddToCart">Add to Cart</Button>
-                </DrawerFooter>
             </DrawerContent>
         </Drawer>
     </div>
@@ -38,10 +35,6 @@ const router = useRouter()
 const { data } = await useAsyncQuery<Product>(product, {
     id: route.params.id
 })
-
-const handleAddToCart = () => {
-    router.push('/dashboard')
-}
 
 onMounted(() => {
     isDrawerOpen.value = true // Auto-trigger drawer when component mounts
