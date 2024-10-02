@@ -1,7 +1,7 @@
 <template>
     <Drawer>
         <DrawerTrigger>
-            <Icon name="solar:cart-bold" class="text-emerald-900 size-10" />
+            <Icon name="solar:cart-bold" class="text-emerald-900 size-7" />
         </DrawerTrigger>
         <DrawerContent class="h-[450px] bg-emerald-50 rounded-t">
             <DrawerHeader>
