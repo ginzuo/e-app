@@ -23,8 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { Drawer, DrawerContent, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from '@/components/ui/drawer'
-import { Button } from '@/components/ui/button'
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from '@/components/ui/drawer'
 import type { Product } from '~/types'
 import { product } from "~/graphql/Queries"
 
